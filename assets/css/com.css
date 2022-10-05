@@ -19,6 +19,9 @@
 
 * {
   font-family: helvetica, arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -130,11 +133,12 @@ tr {
   text-decoration: underline;
 }
 
-.fb-comments-comment-actions likes {
+
+
+.like-area  /*fb-comments-comment-actions likes*/ {
   font-size: 13px;
-  background: url(https://cloudcode.site/likes.png);
   background-repeat: no-repeat;
-  padding-left: 43px;
+  padding-left: 23px;
   padding-right: 6px;
   padding-top: 3px;
   padding-bottom: 2px;
@@ -144,6 +148,15 @@ tr {
   border: solid #eaebef;
   border-radius: 19px;
 }
+
+
+.like-area /*fb-comments-comment-actions likes*/ img {
+  padding-right: 3px;
+  width:25px;
+  margin-left: auto;
+}
+
+
 
 .fb-comments-comment-actions date {
   font-size: 0.75em;
