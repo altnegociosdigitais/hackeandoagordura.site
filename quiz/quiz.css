@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* NAV */
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 800px;
+  height: 200px;
+  
+}
+
+.btncontainer {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btnsteps {
+  width: 80px;
+  height: 80px;
+  font-size: 1.3rem;
+  border-radius: 2.5rem;
+  border: 1px solid pink;
+  background-color: rgb(177, 177, 177);
+  color: #fff;
+}
+
+.btnsteps:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.isActive {
+  background-color: rgb(255, 177, 235);
+}
+
+/* MAIN */
+
+.container {
+  min-width: 800px;
+  min-height: 400px;
+ 
+}
+
+.steps {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  transition: opacity 1s ease-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.stepActive {
+    opacity: 1;
+    height: 100%;
+}
+
+
+
+.options {
+  height: 100%;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.options input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.options label {
+  display: inline-block;
+  background-color: #fff;
+  padding: 10px 20px;
+  border: 1px solid rgb(255, 157, 226);
+  border-radius: 4px;
+  min-width: 200px;
+  text-align: center;
+}
+
+.options input[type="radio"]:checked + label {
+  background-color:rgb(255, 177, 235);
+}
+
+.options input[type="radio"]:focus + label {
+  border: 2px dashed #444;
+}
+
+.options label:hover {
+  cursor: pointer;
+  background-color: rgb(255, 177, 235);
+}
+
+
+
+
+
+footer {
+  max-width: 800px;
+  text-align: center;
+}
