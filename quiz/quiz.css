@@ -117,10 +117,13 @@ body {
 }
 
 
-
-
-
 footer {
   max-width: 800px;
   text-align: center;
+}
+
+@media only screen and (max-width: 738px) {
+  body {
+    font-size: 0.8rem;
+  }
 }
